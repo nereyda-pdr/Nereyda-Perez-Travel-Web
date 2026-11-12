@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paraiso | Latin America & Mexico Travel Agency</title>
+
+    <!-- Third-party library stylesheets -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <h1 class="logo">Paraiso<span>.</span></h1>
+
+            <nav class="main-nav">
+                <a href="#destinations">Destinations</a>
+                <a href="#map">Location</a>
+                <a href="#gallery">Gallery</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <canvas id="granim-canvas"></canvas>
+
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content" data-aos="fade-up">
+
+                <span class="hero-tag">YOUR NEXT ADVENTURE STARTS HERE</span>
+
+                <h2>
+                    Discover the magic<br>
+                    of <span>Latin America</span>
+                </h2>
+
+                <p>
+                    From colorful streets and ancient civilizations
+                    to breathtaking beaches and wild landscapes,
+                    discover the places that make Latin America unforgettable.
+                </p>
+
+                <a href="#destinations" class="btn">Explore Destinations</a>
+
+                <div class="hero-note">
+                    <span>✦</span> Explore. Experience. Enjoy.
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Destinations Section -->
+        <section id="destinations" class="section">
+
+            <div class="container">
+
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-label">FIND YOUR NEXT ESCAPE</span>
+                    <h2 class="section-title">Top LATAM Destinations</h2>
+                    <p>Discover incredible places and unforgettable experiences.</p>
+                </div>
+
+                <div class="swiper mySwiper" data-aos="fade-up">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=800&q=80"
+                                    alt="Cancun, Mexico"
+                                >
+                                <div class="card-content">
+                                    <span class="card-country">MEXICO</span>
+                                    <h3>Cancún</h3>
+                                    <p>White sand beaches and crystal-clear Caribbean waters.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    src="https://images.unsplash.com/photo-1526392060635-9d6019884377?auto=format&fit=crop&w=800&q=80"
+                                    alt="Machu Picchu, Peru"
+                                >
+                                <div class="card-content">
+                                    <span class="card-country">PERU</span>
+                                    <h3>Machu Picchu</h3>
+                                    <p>Explore the majestic ancient sanctuary of the Andes.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <img
+                                    src="assets/images/Bogota-17.jpg"
+                                    alt="Bogota, Colombia"
+                                >
+                                <div class="card-content">
+                                    <span class="card-country">COLOMBIA</span>
+                                    <h3>Bogotá</h3>
+                                    <p>Discover colorful streets, culture and mountain views.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Interactive Map -->
+        <section id="map" class="section bg-light">
+
+            <div class="container">
+
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-label">EXPLORE THE REGION</span>
+                    <h2 class="section-title">Where will you go next?</h2>
+                    <p>Take a look at our location and explore the region.</p>
+                </div>
+
+                <div id="leaflet-map" data-aos="zoom-in"></div>
+
+            </div>
+        </section>
+
+
+        <!-- Gallery -->
+        <section id="gallery" class="section">
+
+            <div class="container">
+
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-label">TRAVEL INSPIRATION</span>
+                    <h2 class="section-title">Traveler Gallery</h2>
+                    <p>A little inspiration for your next adventure.</p>
+                </div>
+
+                <div class="gallery-grid" data-aos="fade-up">
+
+                    <a href="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=1200&q=80"
+                       class="glightbox">
+                        <img
+                            src="https://images.unsplash.com/photo-1518638150340-f706e86654de?auto=format&fit=crop&w=600&q=80"
+                            alt="Chichen Itza, Mexico"
+                        >
+                        <span>Mexico</span>
+                    </a>
+
+                    <a href="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1200&q=80"
+                       class="glightbox">
+                        <img
+                            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80"
+                            alt="Rio de Janeiro, Brazil"
+                        >
+                        <span>Brazil</span>
+                    </a>
+
+                    <a href="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1200&q=80"
+                       class="glightbox">
+                        <img
+                            src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
+                            alt="Patagonia, Argentina"
+                        >
+                        <span>Argentina</span>
+                    </a>
+
+                    <a href="https://images.unsplash.com/photo-1664272051371-943ce55d7b22?auto=format&fit=crop&w=1200&q=80"
+                       class="glightbox">
+                        <img
+                            src="https://images.unsplash.com/photo-1664272051371-943ce55d7b22?auto=format&fit=crop&w=600&q=80"
+                            alt="Salar de Uyuni, Bolivia"
+                        >
+                        <span>Bolivia</span>
+                    </a>
+
+                    <a href="assets/images/Bogota-17.jpg" class="glightbox">
+                        <img
+                            src="assets/images/Bogota-17.jpg"
+                            alt="Bogota, Colombia"
+                        >
+                        <span>Colombia</span>
+                    </a>
+
+                    <a href="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=80"
+                       class="glightbox">
+                        <img
+                            src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=600&q=80"
+                            alt="Landscape in South America"
+                        >
+                        <span>South America</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <h2>Paraiso<span>.</span></h2>
+            <p>Discover more. Travel further.</p>
+            <p class="copyright">
+                &copy; 2026 Paraiso Travels. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
+    <!-- Third-party library scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
